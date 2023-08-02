@@ -1,10 +1,25 @@
-.nav h1{
-    margin: 20px;
+.titulo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
+.titulo h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: end;
+    color: #4682B4;
+}
+
 .nav .linha{
-    border-top: 2px solid black;
+    border-top: 2px solid white;
     margin: 15px;
 }
 
