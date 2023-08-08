@@ -2,52 +2,78 @@
     display: grid;
 }
 
-.home .container{
+.home .grid{
     width: 100%;
-    margin-bottom: 9px;
-    background-color: white;
-    box-shadow: 4px 4px 9px #8e8e8e;
+    margin-top: 6em;
+    /*background-color: white;*/
+    /*box-shadow: 4px 4px 9px #8e8e8e;*/
     border-radius: 6px;
     display: flex;
     align-items: center;
 }
 
-.container img{
-    margin: 20px;
-    border: 6px solid white;
-    border-radius: 100px;
-    box-shadow: 0px 0px 15px #8e8e8e;
-    width: 160px;
-    height: 160px;
+.grid img{
+    margin: 20px 9% 20px 20px;
+    /*border: 6px solid white;*/
+    /*border-radius: 100px;*/
+    /*box-shadow: 0px 0px 15px #8e8e8e;*/
+    width: 190px;
+    height: 190px;
+    /*animation: flutuar 3s ease-in-out infinite alternate;*/
+    position: relative;
+
 }
 
-.perfil{
+.apresentacao h1.nome{
+    color: #018afb;
+    margin-bottom: 9px;
+}
+
+.apresentacao > span{
+    text-align: justify;
+}
+
+@keyframes flutuar{
+    0%{
+        box-shadow: 0px 0px 15px #111111;
+    }
+    100%{
+        box-shadow: 0px 0px 6px #00ff08;
+    }
+}
+
+.apresentacao{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     margin-bottom: 9px;
 }
 
-.perfil h1{
+.apresentacao h1{
     text-shadow: 0px 0px #111111;
     font-size: 36px;
 }
 
-.perfil span{
+.apresentacao span{
     color: #aeaeae;
     font-weight: bold;
     font-size: 20px;
 }
 
-.perfil button{
+.apresentacao button{
     color: white;
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
     background-color: #111111;
-    box-shadow: 6px 6px 15px #8e8e8e;
+    box-shadow: 0px 0px 15px #8e8e8e;
     margin-top: 9px;
     width: 330px;
     height: 40px;
+    cursor: pointer;
+}
+
+.apresentacao button:hover{
+    box-shadow: 0px 0px 20px #8e8e8e;
 }
 
 .containerformacao{
@@ -112,4 +138,9 @@
     border-bottom: 3px solid #111111;
     font-size: 30px;
     font-weight: 600;
+}
+
+.formacao h1{
+    text-shadow: 0px 0px #111111;
+    font-size: 36px;
 }

@@ -3,5 +3,47 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 50px;
+}
+
+.header .borda{
+    background-image: linear-gradient( to right, #018afb, #111111 );
+    padding-bottom: 5px;
+}
+
+.header .logo{
+    background-color: #ffffff;
+}
+
+.header .logo h3{
+    text-align: end;
+    color: #018afb;
+}
+
+.header nav{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    text-decoration: none;
+}
+
+.header nav ul li{
+    list-style-type: none;
+}
+
+.header nav ul li a, .header nav ul li{
+    cursor: pointer;
+    text-decoration: none;
+    color: #11111140;
+    transition: .5s;
+}
+
+.header nav ul li:hover, .header nav ul li a:hover{
+    transform: scale(1.05);
+    color: #111111;
 }
