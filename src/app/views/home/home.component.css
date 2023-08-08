@@ -23,7 +23,7 @@
 
 }
 
-.apresentacao h1.blue, .formacao h1.blue{
+.apresentacao h1.blue, .formacao h1.blue, .certificados h1.blue{
     color: #018afb;
     margin-bottom: 9px;
 }
@@ -44,11 +44,11 @@
 
 .block{
     display: block;
-    border: 2px solid red;
-    text-align: center;
 }
 
-.apresentacao h1, .formacao h1{
+
+
+.apresentacao h1, .formacao h1, .certificados h1{
     text-shadow: 0px 0px #111111;
     font-size: 36px;
 }
@@ -80,6 +80,26 @@ section span{
     }
 }
 
+.block .cursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-grow: 0;
+}
+
+.cursos img{
+    margin-top: 30px;
+    width: 35em;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.cursos img:hover{
+    box-shadow: 0px 0px 16px #8e8e8e;
+    transform: scale(1.05);
+}
+
 .containerhabilidade{
     width: 100%;
     display: grid;
@@ -96,29 +116,12 @@ section span{
     grid-template-columns: repeat(3, 1fr);
 }
 
-.containercertificados .bordas, .containercertificados .bordas img{
-    height: 250px;
-}
-
 .containergithub{
     width: 100%;
     display: grid;
     column-gap: 10px;
     row-gap: 1em;
     grid-template-columns: repeat(4, 1fr);
-}
-
-.bordas{
-    background-color: #ffffff;
-    box-shadow: 4px 4px 9px #8e8e8e;
-    border-radius: 6px;
-    height: 130px;
-    padding: 9px;
-}
-
-.bordas img, .bordas iframe{
-    width: 100%;
-    height: 130px;
 }
 
 .divisor{
