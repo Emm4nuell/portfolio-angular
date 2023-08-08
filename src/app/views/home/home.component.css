@@ -1,89 +1,83 @@
 .home{
-    display: grid;
+    display: block;
 }
 
-.home .grid{
+.home .flex{
     width: 100%;
-    margin-top: 6em;
-    /*background-color: white;*/
-    /*box-shadow: 4px 4px 9px #8e8e8e;*/
-    border-radius: 6px;
     display: flex;
     align-items: center;
 }
 
-.grid img{
+.home section{
+    margin-top: 9em;
+    gap: 10em;
+}
+
+.flex .foto img{
     margin: 20px 9% 20px 20px;
-    /*border: 6px solid white;*/
-    /*border-radius: 100px;*/
-    /*box-shadow: 0px 0px 15px #8e8e8e;*/
-    width: 190px;
-    height: 190px;
-    /*animation: flutuar 3s ease-in-out infinite alternate;*/
+    border-radius: 100%;
+    width: 230px;
+    height: 230px;
+    animation: mudarcor 2s ease-in-out infinite alternate;
     position: relative;
 
 }
 
-.apresentacao h1.nome{
+.apresentacao h1.blue, .formacao h1.blue{
     color: #018afb;
     margin-bottom: 9px;
 }
 
-.apresentacao > span{
-    text-align: justify;
-}
-
-@keyframes flutuar{
+@keyframes mudarcor{
     0%{
-        box-shadow: 0px 0px 15px #111111;
+        box-shadow: 0px 0px 6px #018afb;
     }
     100%{
-        box-shadow: 0px 0px 6px #00ff08;
+        box-shadow: 0px 0px 15px #018afb;
     }
 }
 
 .apresentacao{
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     margin-bottom: 9px;
 }
 
-.apresentacao h1{
+.block{
+    display: block;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.apresentacao h1, .formacao h1{
     text-shadow: 0px 0px #111111;
     font-size: 36px;
 }
 
-.apresentacao span{
+section span{
     color: #aeaeae;
     font-weight: bold;
     font-size: 20px;
+    text-align: justify;
 }
 
-.apresentacao button{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: #111111;
-    box-shadow: 0px 0px 15px #8e8e8e;
-    margin-top: 9px;
-    width: 330px;
-    height: 40px;
-    cursor: pointer;
+.flex .logoformacao img{
+    width: 430px;
+    height: 330px;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    position: relative;
+    text-shadow: 10px 10px 10px black;
 }
 
-.apresentacao button:hover{
-    box-shadow: 0px 0px 20px #8e8e8e;
-}
-
-.containerformacao{
-    width: 100%;
-    margin-bottom: 9px;
-    background-color: white;
-    box-shadow: 4px 4px 9px #8e8e8e;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
+@keyframes flutuar{
+    0%{
+        transform: rotateY(180deg)
+    }
+    50%{
+        transform: rotateY(270deg);
+    }
+    100%{
+        transform: rotateY(360deg)
+    }
 }
 
 .containerhabilidade{
@@ -138,9 +132,4 @@
     border-bottom: 3px solid #111111;
     font-size: 30px;
     font-weight: 600;
-}
-
-.formacao h1{
-    text-shadow: 0px 0px #111111;
-    font-size: 36px;
 }
