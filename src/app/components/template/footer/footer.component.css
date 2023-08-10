@@ -1,0 +1,25 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.rodape .social{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border-bottom: 6px solid #018afb;
+}
+
+.social a{
+    font-size: 3em;
+    cursor: pointer;
+    color: #111111;
+    transition: .5s;
+}
+
+.social a:hover, .social a i:hover{
+    transform: scale(1.06);
+    color: #018afb;
+}

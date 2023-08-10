@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 0px 10%;
 }
 
 .home section{
@@ -23,7 +24,7 @@
 
 }
 
-.apresentacao h1.blue, .formacao h1.blue, .certificados h1.blue{
+.apresentacao h1.blue, .formacao h1.blue, .certificados h1.blue, .habilidades h1.blue, .github h1.blue{
     color: #018afb;
     margin-bottom: 9px;
 }
@@ -44,11 +45,12 @@
 
 .block{
     display: block;
+    padding: 0px 10%;
 }
 
 
 
-.apresentacao h1, .formacao h1, .certificados h1{
+.apresentacao h1, .formacao h1, .certificados h1, .habilidades h1, .github h1{
     text-shadow: 0px 0px #111111;
     font-size: 36px;
 }
@@ -100,39 +102,96 @@ section span{
     transform: scale(1.05);
 }
 
-.containerhabilidade{
+.absolute{
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.absolute .formulario{
+    background-color: #018afb;
+    padding: 20px;
+    text-align: center;
+    animation: mudarcor 2s ease-in-out infinite alternate;
+    
+}
+
+.absolute .formulario form{
+    padding: 20px 0px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
+    margin: auto;
+    gap: 10px;
+    min-width: 40%;
+    max-width: 41%;
 }
 
-.containercertificados{
-    width: 100%;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
+.formulario input{
+    height: 50px;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 25px;
+    color: #111111;
 }
 
-.containergithub{
-    width: 100%;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 1em;
-    grid-template-columns: repeat(4, 1fr);
+.formulario textarea{
+    height: 10em;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 25px;
+    color: #111111;
 }
 
-.divisor{
-    margin-top: 1em;
+.formulario textarea:focus, .formulario input:focus{
+    outline: 0;
 }
 
-.divisor p{
-    position: relative;
-    color: #4682B4;
-    margin-top: 10px;
-    border-bottom: 3px solid #111111;
-    font-size: 30px;
+.absolute .formulario button{
+    background-color: #111111;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
     font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.falacomigo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.falacomigo .blue{
+    color: #018afb;
+}
+
+.slider{
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider ul{
+    height: 6em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider ul li{
+    border: 2px solid #018afb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
 }

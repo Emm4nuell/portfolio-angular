@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     width: 100%;
-    padding: 0px 9%;
+    /* padding: 0px 9%; */
 }
 
 .nav{
@@ -12,6 +12,5 @@
 }
 
 .headercontent{
-    padding: 9px;
     width: 100%;
 }

@@ -1,10 +1,12 @@
 .header{
+    background-color: #ffffff;
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     z-index: 1;
+    padding: 10px 9%;
 }
 
 .header .borda{
@@ -48,4 +50,29 @@
 .header nav ul li:hover, .header nav ul li a:hover{
     transform: scale(1.05);
     color: #111111;
+}
+
+.header > a{
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #018afb;
+    cursor: pointer;
+    animation: botao 3s ease-in-out alternate infinite;
+    transition: .2s;
+}
+
+.header > a:hover{
+    transform: scale(1.05);
+}
+
+@keyframes botao {
+    0%{
+        box-shadow: 0 0 3px #018afb;
+    }
+    100%{
+        box-shadow: 0 0 15px #111111;
+    }
 }

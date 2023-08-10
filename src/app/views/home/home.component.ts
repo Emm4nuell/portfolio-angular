@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  fala(): void{
+    let x = document.querySelector(".falacomigo");
+    console.log(x?.getBoundingClientRect);
+  }
+
 }
