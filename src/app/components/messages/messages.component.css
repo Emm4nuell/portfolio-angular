@@ -1,0 +1,47 @@
+.message{
+    background-color: #ffffffb9;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixa{
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    display: block;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0px 0px 5px #111111;
+}
+
+.caixa span{
+    font-size: 30px;
+}
+
+.icone i{
+    padding: 10px;
+    font-size: 3em;
+}
+
+.icone{
+    margin-top: 30px;
+}
+
+button{
+    margin-top: 30px;
+    background-color: rgb(0, 128, 0);
+    width: 200px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #111111;
+    padding: 10px;
+}

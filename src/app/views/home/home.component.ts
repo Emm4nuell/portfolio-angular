@@ -1,4 +1,9 @@
+import { MessagesComponent } from './../../components/messages/messages.component';
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
+
+import { Usuario } from 'src/app/Interfaces/usuario';
+import { ListService } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +12,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  nome : String = "";
+  private al = new MessagesComponent;
+  usuario : Usuario ={
+    id: 0,
+    nome : '', 
+    email : '', 
+    celular : '', 
+    mensagem : ''
+  };
 
-  constructor(){}
+  lista !: Usuario[];
 
+  /* ocultar uma div */
+  mostrar : boolean = false;
+
+  /* Mostrar na página Inicial */
+  nome : string = "SOU EDUARDO EMMANUEL";
+  virgula : string = ',';
+
+  
+ cadastrar(){
+  console.log(this.usuario);
+  this.listService.adicionarUsuario(this.usuario).subscribe(dados => {
+    console.log('Cadastrar')
+    this.usuario ={
+      id: 0,
+      nome : '', 
+      email : '', 
+      celular : '', 
+      mensagem : ''
+    };
+
+  }, err =>{
+    console.log('Erro ao cadastrar o usuario! ', err);
+    this.usuario = this.usuario;
+    this.al.voltar
+  });
+ }
+  
+  constructor(private listService: ListService){}
   ngOnInit(): void {}
-
-  obterValor(nome : String){
-    this.nome = nome;
-  }
 }

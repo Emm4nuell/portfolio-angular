@@ -5,8 +5,8 @@
             <!--<img src="../../../assets/foto.png" alt="Foto"/>-->
         </div>
         <div class="apresentacao">
-            <h1>MUITO PRAZER,</h1>
-            <h1 class="blue">SOU EDUARDO EMMANUEL</h1>
+            <h1>MUITO PRAZER{{virgula}}</h1>
+            <h1 class="blue">{{nome}}</h1>
             <span>
                 <p>
                     Olá, seja bem-vindo(a) ao meu perfil! Sou um entusiasta apaixonado por tecnologia e um Desenvolvedor Full Stack comprometido 
@@ -63,7 +63,8 @@
             <h1>HABILIDADES</h1>
             <h1 class="blue">Habilidades adquiridas</h1>
         </div>
-        <div class="slider">
+        <!-- ngIf esta ocultando o div slider -->
+        <div class="slider" *ngIf="mostrar">
             <ul class="slider_ul">
                 <li class="slider_li">1</li>
                 <li class="slider_li">2</li>
@@ -94,7 +95,8 @@
             <h1>PROJETOS</h1>
             <h1 class="blue">Projetos no GitHub</h1>
         </div>
-        <div class="slider">
+        <!-- ngIf esta ocultando o div slider -->
+        <div class="slider" *ngIf="mostrar">
             <ul class="slider_ul">
                 <li class="slider_li">1</li>
                 <li class="slider_li">2</li>
@@ -112,23 +114,36 @@
     </section>
 
     <section class="block absolute">
+
+        <table style="width: 100%;">
+            <tr *ngFor="let acesso of lista">
+                <td>{{acesso.nome}}</td>
+                <td>{{acesso.email}}</td>
+                <td>{{acesso.celular}}</td>
+                <td>{{acesso.mensagem}}</td>
+                <td><a routerLink="/list/{{acesso.id}}">Acessar</a></td>
+            </tr>
+        </table>
+
+
         <div class="falacomigo">
             <h1>FALA</h1>
             <h1 class="blue">COMIGO.</h1>
         </div>
         <div class="formulario">
             <form>
-                <input type="text" placeholder="Seu nome:"/>
-                <input type="email" placeholder="Seu e-mail:">
-                <input type="tel" placeholder="Seu celular">
-                <textarea placeholder="Sua mensagem..."></textarea>
+                <input type="text" [(ngModel)]="usuario.nome" name="nome" placeholder="Seu nome:" required/>
+                <span>{{usuario.nome}}</span>
+                <input type="email" [(ngModel)]="usuario.email" name="email" placeholder="Seu e-mail:" required/>
+                <input type="tel" [(ngModel)]="usuario.celular" name="celular" placeholder="Seu celular" required/>
+                <textarea [(ngModel)]="usuario.mensagem" name="mensagem" placeholder="Sua mensagem..."></textarea>
             </form>
-            <button type="submit">Enviar</button>
+            <button type="submit" (click)="cadastrar()">Enviar</button>
         </div>
     </section>
 
     <section class="flex">
-
+        
     </section>
 
 

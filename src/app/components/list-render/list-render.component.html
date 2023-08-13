@@ -1,6 +1,12 @@
 <div class="lista">
     <h1>Usuários</h1>
-    <ul>
-        <li *ngFor="let usuario of usuarios">Nome: {{usuario.nome}} sexo: {{usuario.sexo}}</li>
-    </ul>
+    <table style="width: 100%;">
+        <tr *ngFor="let acesso of acessos">
+            <td>{{acesso.nome}}</td>
+            <td>{{acesso.email}}</td>
+            <td>{{acesso.celular}}</td>
+            <td>{{acesso.mensagem}}</td>
+            <td><a routerLink="/list/{{acesso.id}}">Acessar</a></td>
+        </tr>
+    </table>
 </div>
