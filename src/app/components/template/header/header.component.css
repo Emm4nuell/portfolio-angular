@@ -6,12 +6,12 @@
     align-items: center;
     width: 100%;
     z-index: 1;
-    padding: 10px 9%;
+    padding: 10px 9em;
 }
 
 .header .borda{
     background-image: linear-gradient( to right, #018afb, #111111 );
-    padding-bottom: 5px;
+    /* padding-bottom: 3px; */
 }
 
 .header .logo{
@@ -20,19 +20,27 @@
 
 .header .logo h3{
     text-align: end;
+    font-size: 20px;
     color: #018afb;
+}
+
+.header .logo h1{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 .header nav{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .header nav ul{
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 36px;
     text-decoration: none;
 }
 
@@ -40,7 +48,7 @@
     list-style-type: none;
 }
 
-.header nav ul li a, .header nav ul li{
+nav ul li a, nav ul li{
     cursor: pointer;
     text-decoration: none;
     color: #11111140;
@@ -58,7 +66,7 @@
     text-align: center;
     min-width: 200px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     background-color: #018afb;
     cursor: pointer;
@@ -84,14 +92,14 @@
     }
 }
 
-@media (max-width:1000px){
+@media (max-width:1400px){
     .header{
         display: flex;
         justify-content: space-around;
         width: 100%;
-        padding: 3px;
         z-index: 1;
         gap: 1em;
+        padding: 10px;
     }
 
     .header .borda{
@@ -100,17 +108,17 @@
     
     .header nav ul{
         display: flex;
-        gap: 30px;
+        gap: 26px;
         text-decoration: none;
     }
 
     .header nav{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 100%;
     }
 
     .header .logo h1{
-        font-size: 20px;
+        font-size: 100%;
     }
 }

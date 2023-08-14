@@ -13,7 +13,6 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
-import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { MessagesComponent } from './components/messages/messages.component';
     HomeComponent,
     SobreComponent,
     ItemDetailComponent,
-    MessagesComponent
   ],
   imports: [
     BrowserModule,
