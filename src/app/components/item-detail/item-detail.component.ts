@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Usuario } from 'src/app/Interfaces/usuario';
-import { ListService } from 'src/app/services/service.service';
+import { Service } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -13,7 +13,7 @@ export class ItemDetailComponent {
 
   acesso?: Usuario;
 
-  constructor(private listService : ListService, private route : ActivatedRoute){
+  constructor(private listService : Service, private route : ActivatedRoute){
     this.getAcesso();
   }
 

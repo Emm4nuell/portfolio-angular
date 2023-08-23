@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ListService } from 'src/app/services/service.service';
+import { Service } from 'src/app/services/service.service';
 
 import { Usuario } from 'src/app/Interfaces/usuario';
 
@@ -14,7 +14,7 @@ export class ListRenderComponent implements OnInit{
   /* Dados que esta na interface para seguir um padrão */
   acessos : Array<Usuario> = new Array();
 
-  constructor(private listService: ListService){}
+  constructor(private listService: Service){}
 
   ngOnInit(): void {
     this.listService.getAll().subscribe(dados => {

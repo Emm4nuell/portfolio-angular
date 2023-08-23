@@ -8,9 +8,10 @@ import { Observable, Subscribable, Subscriber, take } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ListService {
+export class Service {
 
   private readonly apiUrl = 'http://localhost:8080/';
+  private readonly gitbub = 'https://api.github.com/users/Emm4nuell/repos';
    usuario : Usuario ={
     id: 0,
     nome: '',
@@ -20,6 +21,11 @@ export class ListService {
    };
 
   constructor(private http: HttpClient) { }
+
+
+  git(){
+    return this.http.get<any>(this.gitbub);
+  }
 
   /* Listar todos os acessos! */
   getAll(): Observable<Usuario[]>{

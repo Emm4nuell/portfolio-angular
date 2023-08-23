@@ -1,0 +1,41 @@
+.github{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 2em;
+    gap: 20px;
+}
+
+.github .projetosgithub{
+    box-shadow: 0 0 10px #111111;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+
+.github .projetosgithub a{
+    font-size: 14px;
+    word-wrap: break-word; 
+    width: 100%;
+}
+
+.github .projetosgithub img{
+    margin: auto;
+    display: flex;
+    width: 90%;
+}
+
+@media (max-width: 1000px) { 
+    .github{
+        width: 100%;
+        border: 2px solid red;
+        display: grid;
+        grid-auto-flow: 100%;
+        grid-template-columns: 30% 30% 30%;
+        margin-top: 2em;
+        gap: 20px;
+    }
+}

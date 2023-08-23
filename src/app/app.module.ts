@@ -13,6 +13,9 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { SliderDirective } from './diretivas/slider.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GithubComponent } from './components/github/github.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,15 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
     HomeComponent,
     SobreComponent,
     ItemDetailComponent,
+    SliderDirective,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
