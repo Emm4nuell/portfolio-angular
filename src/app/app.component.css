@@ -2,16 +2,13 @@
     min-height: 100vh;
     display: flex;
     width: 100%;
+    padding: 0;
+    margin: 0;
     /* padding: 0px 9%; */
 }
 
 .headercontent{
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
-.container {
-    display: block;
-    height: 500px;
-    width: 500px;
-    padding: 2em;
-  }

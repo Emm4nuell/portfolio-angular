@@ -1,6 +1,6 @@
 .home{
     display: block;
-    margin-top: 15em;
+    margin-top: 9em;
     width: 100%;
 }
 
@@ -14,18 +14,25 @@
 }
 
 .home section{
-    margin-top: 9em;
+    margin-top: 10em;
     gap: 10em;
 }
 
+.flex .foto, .flex .apresentacao, .flex .formacao, .flex .logoformacao{
+    width: 100%;
+}
+
+.flex .foto, .flex .logoformacao{
+    text-align: center;
+}
+
 .flex .foto img{
-    margin: 20px 9% 20px 20px;
     border-radius: 100%;
-    width: 230px;
-    height: 230px;
+    width: 60%;
+    min-width: 300px;
     animation: mudarcor 2s ease-in-out infinite alternate;
     position: relative;
-
+    border: 2px soid orage;
 }
 
 .apresentacao h1.blue, .formacao h1.blue, .certificados h1.blue, .habilidades h1.blue, .github h1.blue{
@@ -49,7 +56,8 @@
 
 .block{
     display: block;
-    padding: 0px 10%;
+    width: 80%;
+    margin: auto;
 }
 
 .apresentacao h1, .formacao h1, .certificados h1, .habilidades h1, .github h1{
@@ -85,9 +93,11 @@ section span{
 }
 
 .block .cursos{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin: auto;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     flex-grow: 0;
 }
@@ -95,6 +105,7 @@ section span{
 .cursos img{
     margin-top: 30px;
     width: 35em;
+    width: 100%;
     border-radius: 30px;
     transition: .2s;
 }
@@ -191,7 +202,11 @@ section span{
     height: 500px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
+
+    .home{
+        margin-top: 6em;
+    }
 
     .home .flex{
         display: grid;
@@ -207,26 +222,22 @@ section span{
         margin-top: -9em;
     }
 
-    .flex .foto{
+    .flex .foto, .flex .logoformacao{
+        margin: auto;
         text-align: center;
-        width: 100%;
+        width: 70%;
     }
 
     .flex .foto img{
         margin: 0px;
-        width: 400px;
-        height: 400px;
+        width: 60%;
         border-radius: 100%;
         animation: mudarcor 2s ease-in-out infinite alternate;
         position: relative;
     }
 
-    .flex .logoformacao{
-        text-align: center;
-        margin: -9em;
-    }
-
     .logoformacao img{
+        margin: 0;
         width: 100%;
     }
 

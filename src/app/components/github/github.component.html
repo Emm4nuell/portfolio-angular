@@ -1,8 +1,13 @@
 <div class="github">
     <a href="{{git.html_url}}" target="_blank" class="projetosgithub" *ngFor="let git of projetos ; let i = index">
-        <a href="{{git.html_url}}" target="_blank">{{git.html_url}}</a>
+        <div id="nomegit">
+            <h1>{{git.name}}</h1>
+        </div>
         <img src="https://www.genexus.com/media/images/github-logo-2-imagen.jpg?timestamp=20190527124425">
-        <a href="{{git.html_url}}">GitHub</a>
+
+        <div id="gitacessar">
+            <h1>Acessar projeto</h1>
+        </div>
 
     </a>
 </div>

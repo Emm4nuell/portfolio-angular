@@ -16,6 +16,7 @@ import { ItemDetailComponent } from './components/item-detail/item-detail.compon
 import { SliderDirective } from './diretivas/slider.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GithubComponent } from './components/github/github.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GithubComponent } from './components/github/github.component';
     SobreComponent,
     ItemDetailComponent,
     SliderDirective,
-    GithubComponent
+    GithubComponent,
+    HabilidadesComponent
   ],
   imports: [
     BrowserModule,
