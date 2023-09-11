@@ -10,7 +10,7 @@
 .slider .slide-track{
     display: flex;
     width: calc(250px * 12);
-    animation: scroll 20s linear infinite;
+    animation: scroll 19s linear infinite;
     gap: 20px;
 }
 
